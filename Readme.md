@@ -4,7 +4,7 @@
 
 Create and edit maps for [OATC](http://oatc.io) project.
 
-<img src="../Assets/Images/map-window.png" alt="Map Window" width="500" hspace="20">
+<img src="Assets/Images/map-window.png" alt="Map Window" width="500" hspace="20">
 
 # How to use
 
@@ -12,7 +12,7 @@ Create and edit maps for [OATC](http://oatc.io) project.
 
 - The active layer will be shown highlighted in the Layers Window.
 
-<img src="../Assets/Images/layers-window.png" alt="Layers Window" width="200" hspace="30">
+<img src="Assets/Images/layers-window.png" alt="Layers Window" width="200" hspace="30">
 
 - Each layer can be exported individually. (The exported file can be read by [AirspaceKit](https://github.com/sdrpa/oatcme))
 
