@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MapWindowController" customModule="OATCME" customModuleProvider="target">
+            <connections>
+                <outlet property="coordTextField" destination="0U6-up-EjR" id="zXC-le-tmi"/>
+                <outlet property="mapView" destination="uSJ-G1-RQO" id="kQh-4v-DE6"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="M9d-vv-OWX"/>
+                <outlet property="zoomLevelTextField" destination="pXT-Xo-mNl" id="wNO-zU-cI5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" frameAutosaveName="MapWindow" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="500" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="500" height="500"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ" customClass="MapContainerView" customModule="OATCME" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uSJ-G1-RQO">
+                        <rect key="frame" x="0.0" y="20" width="500" height="480"/>
+                    </mapView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U6-up-EjR">
+                        <rect key="frame" x="253" y="5" width="244" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="3nv-eK-lN0"/>
+                            <constraint firstAttribute="height" constant="17" id="ebH-Ph-cBh"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="bWD-Jl-Beu">
+                            <font key="font" size="13" name="CourierNewPSMT"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-Xo-mNl">
+                        <rect key="frame" x="3" y="5" width="244" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="J9w-cm-wUm"/>
+                            <constraint firstAttribute="height" constant="17" id="StU-CT-Qko"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="oSH-q0-6lY">
+                            <font key="font" size="13" name="CourierNewPSMT"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0U6-up-EjR" secondAttribute="bottom" constant="5" id="AYY-xp-Mzz"/>
+                    <constraint firstAttribute="bottom" secondItem="uSJ-G1-RQO" secondAttribute="bottom" constant="20" id="BJY-M4-HNy"/>
+                    <constraint firstAttribute="trailing" secondItem="uSJ-G1-RQO" secondAttribute="trailing" id="JL1-EH-j01"/>
+                    <constraint firstItem="uSJ-G1-RQO" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="Y8O-Sl-LD4"/>
+                    <constraint firstAttribute="bottom" secondItem="pXT-Xo-mNl" secondAttribute="bottom" constant="5" id="gSL-Z9-9bU"/>
+                    <constraint firstItem="uSJ-G1-RQO" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="w8F-8k-u9R"/>
+                    <constraint firstItem="pXT-Xo-mNl" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="5" id="wFK-Cb-mL4"/>
+                    <constraint firstAttribute="trailing" secondItem="0U6-up-EjR" secondAttribute="trailing" constant="5" id="xFi-9o-vFA"/>
+                </constraints>
+            </view>
+        </window>
+    </objects>
+</document>
