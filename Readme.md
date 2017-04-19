@@ -1,4 +1,4 @@
-# OATCME - OpenATC Map Editor
+# OATCME - Open ATC Map Editor
 
 ![Platform](https://img.shields.io/badge/platforms-macOS-333333.svg)
 
