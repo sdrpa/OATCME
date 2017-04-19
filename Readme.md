@@ -14,7 +14,7 @@ Create and edit maps for [OATC](http://oatc.io) project.
 
 <img src="Assets/Images/layers-window.png" alt="Layers Window" width="200" hspace="30">
 
-- Each layer can be exported individually. (The exported file can be read by [AirspaceKit](https://github.com/sdrpa/oatcme))
+- Each layer can be exported individually. (The exported file can be read by [AirspaceKit](https://github.com/sdrpa/airspacekit))
 
 - There are two modes: Map and Drawing. [SPACE] key toggles between map (zoom/move/rotate) and drawing mode.
 
