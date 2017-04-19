@@ -149,6 +149,13 @@ final class MapWindowController: NSWindowController {
     }
 }
 
+extension MapWindowController: NSWindowDelegate {
+
+    func windowDidResize(_ notification: Notification) {
+        self.layersWindowController?.layersNeedDisplay()
+    }
+}
+
 // MARK: - Events
 
 extension MapWindowController {

@@ -66,6 +66,9 @@
                     <constraint firstAttribute="trailing" secondItem="0U6-up-EjR" secondAttribute="trailing" constant="5" id="xFi-9o-vFA"/>
                 </constraints>
             </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4QR-qo-8CQ"/>
+            </connections>
         </window>
     </objects>
 </document>
